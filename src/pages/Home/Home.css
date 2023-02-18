@@ -1,0 +1,95 @@
+.home{
+    height: 100%;
+    margin: 30px 30px 0 30px;    
+}
+
+.home:after{
+    content: "";
+    display: block;
+}
+
+.card-create-project{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 30px; 
+}
+
+.card-create-project button{
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #2e2e2e;
+}
+
+/* .modal-info{
+    
+}   */
+.close-modal{
+    text-align: center;
+    width: 7.5%;
+    margin-left: 94%;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #a13854;
+    color: white;
+    border: 1px solid #a13854;
+    padding-bottom: 1px;
+}
+
+
+#modal{
+    color: black;
+}
+
+.card-create-project button:hover{
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.card-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-project-info{
+    width: 1000px;
+    background-color: #2e2e2e;
+    height: 110px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-project-info .itens{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    margin: -2% 1.1%;
+    color: white;
+    list-style-type: none;
+    position: relative;
+}
+
+.card-project-info .delete-item{
+    color: white;
+    width: 2%;
+    background-color: #a13854;
+    margin: 7px 0 0 97.3%;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    padding-bottom: 01px;
+}
+
+.card-project-info .description{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    margin: 3.5% 0 0 -3%;
+}

@@ -1,23 +1,29 @@
 import { Link } from "react-router-dom";
-import Container from "./Container";
-import styles from "./Navbar.css";
+import "./Navbar.css";
 //Importar LOGO
 
+
 function Navbar() {
+  
+  const handleLogOff = () => {
+    localStorage.clear();
+    window.location.href = '/'
+  }
+
   return (
-    <nav className={styles.navbar}>
-      <Link to="/" className={styles.logo}>
+    <nav className='navbar'>
+      <Link to="/home" className='logo'>
         PersonalProjects
       </Link>
-      <ul className={styles.list}>
-        <li className={styles.item}>
-          <Link to="/">Home</Link>
+      <ul className='list'>
+        <li className='item'>
+          <Link to="/home">Home</Link>
         </li>
-        <li className={styles.item}>
-          <Link to="/projects">My Projects</Link>
+        <li className='item'>
+          <Link to="/user">Usuário</Link>
         </li>
-        <li className={styles.item}>
-          <Link to="/user">User</Link>
+        <li className='item'>
+          <Link onClick={handleLogOff}>Sair</Link>
         </li>
       </ul>
     </nav>

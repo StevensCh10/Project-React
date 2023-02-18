@@ -1,28 +1,21 @@
-import { Fragment} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
-import Signup from "../pages/Signup";
-import useObj from "../useObj";
+import Register from "../pages/Register/Register";
+import User from "../pages/User/User";
 
 function RoutesApp() {
-  
-  const { obj, setObj } = useObj();
- 
-  if(!obj) {
-   return <Login setObj={setObj} />
-  }
-  
+  // SE FOR PRA VERIFICAR SE EXISTE O OBJETO OU NÃO, MELHOR VERIFICAR AQUI
   return (
     <BrowserRouter>
-      <Fragment>
+      <>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="/" element={<Login setObj={setObj}/>} />
-          <Route exact path="/signup" element={<Signup />} />
-          <Route path="*" element={<Login setObj={setObj}/>} />
+          <Route path='*' element={<Login />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='user' element={<User />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
-      </Fragment>
+      </>
     </BrowserRouter>
   );
 }
