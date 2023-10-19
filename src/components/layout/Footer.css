@@ -1,0 +1,40 @@
+.page-wrap:after {
+    height: 40px; 
+}
+
+.footer{
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  opacity: 0.4;
+}
+
+.footer:hover{
+    opacity: 1;
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+}
+
+.social-list li{
+    margin: 5px 3px;
+}
+
+.social-list a{
+    color: black;
+}
+
+.social-list a:hover{
+    color: #a4556a;
+}
+
+.copy-right span{
+    font-weight: bold;
+    color: #a4556a;
+}
